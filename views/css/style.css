@@ -1,0 +1,273 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header-page{
+    z-index: 100;
+    top: -5px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    background: linear-gradient(to top, rgb(26, 97, 26),rgb(30, 211, 30) );
+}
+.menu{
+    display: flex;
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    background: #fff;
+    margin: 0 2px;
+    border: 2px solid rgb(179, 167, 13);
+    padding: 0 20px ;
+    list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/*container
+*/
+.container{
+    
+    display: block;
+    padding: 25px;
+    top: 65px;
+    position: relative;
+}
+.home{
+  
+    display: block;
+    width: 100%;
+    position: relative; 
+    top: 35px;
+    justify-content: center;
+    align-items: center; 
+}
+.home h3{
+    text-align: center;
+}
+.imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.imgs img{
+    width: 250px;
+    height: auto;
+    margin: 10px;
+}
+.description{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+.item{
+    margin: 10px;
+    padding: 15px;
+   display: block;
+   justify-items: center;
+}
+.item p{
+    text-align: center;
+}
+.module-border{
+    left: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+  height: 150px;
+  border: double 10px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(255, 230, 0),#9eff20);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+
+/*
+
+*/
+.contact{
+    
+    position: relative;
+    top: 35px;
+    left: 200px;
+    width: 500px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.contact form{
+    border-radius: 6px;
+    position: relative;
+    top: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.contact form h3{
+    position: relative;
+    left: 220px;
+}
+div.elem-group {
+    margin: 40px 0;
+  }
+  
+  label {
+    display: block;
+    font-family: 'Aleo';
+    padding-bottom: 4px;
+    font-size: 1.25em;
+  }
+  
+  input, select, textarea {
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-family: 'Aleo';
+    width: 500px;
+    padding: 8px;
+  }
+  
+  textarea {
+    height: 250px;
+  }
+  
+  button {
+    height: 50px;
+    background: green;
+    color: white;
+    border: 2px solid darkgreen;
+    font-size: 1.25em;
+    font-family: 'Aleo';
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  /*LOGIN*/
+.login{
+    padding: 15px;
+    position: relative;
+    top: 65px;
+    display: block;
+    margin:0 25px;
+}
+.login form{
+    padding: 15px;
+    border-radius: 4px;
+    border: 5px solid #cdcf2f;
+    display: flex;
+}
+.login form div{
+    padding: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.direction{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer{
+    position: relative;
+    top: 65px;
+    display: flex;
+    height: 150px;
+    background: #22800a;
+    justify-content: center;
+
+}
+.footer p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
+.content{
+   
+    position: relative;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    height: 750px;
+  
+   }
+.slidebar{
+    height: 300px;
+    min-width: 200px;
+    position: relative;
+    max-width: 400px;
+    top: -35px;
+    left: 5px;
+    z-index: 2000;
+}
+.slidebar .menu{
+display: block;
+
+}
+ 
+.slidebar .menu li{
+    padding: 5px;
+    border-top:none ;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #ccc;
+}
+.logout{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.logout a{
+    color: #fff;
+
+}
+.window-container{
+    
+    padding: 30px;
+    margin: 15px;
+    right: 56px;
+    top: 150px;
+    width: 80%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.styleForm{
+    display: flex;
+    margin: 20px;
+    padding: 5px;
+}
+section{
+    margin: 10px;
+}
+.form-border{
+    
+    border:6px solid #cdcf2f;
+    border-radius: 5px;
+}
