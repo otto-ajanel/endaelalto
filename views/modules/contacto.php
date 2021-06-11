@@ -32,5 +32,7 @@ if($_POST) {
 } else {
     echo '<p>Something went wrong</p>';
 }
+header("Location:desconocido.php");
+
  
 ?>

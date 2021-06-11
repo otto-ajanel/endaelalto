@@ -4,13 +4,13 @@
 	<div class="styleForm">
 	<section>
 	<p>Nombre</p>
-	<input type="text" name="nombre" id="nombre">
+	<input type="text" name="nombre" id="nombre" required>
 
 	<p>Apellido</p>
-	<input type="text" name="apellido" id="dirreccion">
+	<input type="text" name="apellido" id="dirreccion" required>
 
 	<p>Edad</p>
-	<input type="text" name="edad" id="email">
+	<input type="text" name="edad" id="email" required>
 	<select  id="estadoCivil" name="estadoCivil" required>
                   
                   <option value="">Selecionar Estado Civil </option>
@@ -31,7 +31,26 @@
                   ?>
   
     </select>
-	<label for="condicion">Condicion en que se encuentra el paciente</label>
+	<select  id="casa" name="casa" required>
+                  
+                  <option value="">Seleccione la casa</option>
+
+                  <?php
+
+                  $item = null;
+                  $valor = null;
+
+                  $casa = CasaController::ctrCasaShow($item, $valor);
+
+                  foreach ($casa as $key => $value) {
+					  
+                    
+                    echo '<option value="'.$value["CODIGO_CASA"].'">'.$value["NOMBRE_CASA"].'</option>';
+                  }
+
+                  ?>
+  
+    </select>
 	<select  id="condicion" name="condicion" required>
                   
                   <option value="">Seleciona su Condicion</option>
@@ -54,17 +73,17 @@
 	</section>
 	<section>
 	<p>Fecha nacimiento</p>
-	<input type="date" name="fechaNacimiento" id="pass">
+	<input type="date" name="fechaNacimiento" id="pass" required>
 
 	<p>Encargado</p>
-	<input type="text" name="encargado" id="fecha1">
+	<input type="text" name="encargado" id="fecha1" required>
 
 	<p>Telefono</p>
-	<input type="text" name="telefono" id = "fecha2">
+	<input type="text" name="telefono" id = "fecha2" required>
 
 
 	<p>Fecha ingreso</p>
-	<input type="date" name="fechaIngreso" id ="postal">
+	<input type="date" name="fechaIngreso" id ="postal" required>
 	</section>
 	</div>
 

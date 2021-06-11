@@ -10,6 +10,7 @@ session_start();
     <title>ENDAELALTO</title>
    <link rel="stylesheet" href="views/css/style.css">
    <link rel="shortcut icon" href="views/img/ico.ico" type="image/x-icon">
+   <script src="views/js/jquery.min.js"></script>
    <script src="views/js/sweetalert2.all.js"></script>
 </head>
 <body>
@@ -47,5 +48,7 @@ session_start();
     }
    ?>
    <script src="views/js/users.js"></script>
+   <script src="views/js/paciente.js"></script>
+
 </body>
 </html>
